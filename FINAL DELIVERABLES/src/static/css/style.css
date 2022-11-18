@@ -1,0 +1,250 @@
+:root{
+ --bgColor : #1abc9c;
+ --fontColor : #fff;
+ --inputColor : #ecf0f1;
+}
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+body{
+    font-family : Roboto;
+}
+.container{
+    display : flex;
+}
+.Tittle{
+    display : flex;
+    align-items: center;
+    color : var(--fontColor);
+}
+.Tittle h1{
+    font-size : 1.5rem;
+}
+.left{
+    height : 41em;
+    width : 50em;
+    padding : 5px;
+    background-color: var(--bgColor);
+    transition: .5s ease-in-out;
+}
+.left_invisible,.right_invisible{
+    margin : 10rem 0;
+    color : var(--fontColor);
+    padding : 1rem;
+    display : flex;
+    flex-direction : column;
+    align-items:center;
+    justify-content : center;
+    text-align :center;
+    transition: .5s ease-in-out;
+}
+.right_invisible{
+    display : none;
+}
+.left_invisible h1,.right_invisible h1{
+    font-size : 3rem;
+    font-weight : bold;
+    letter-spacing : 5px;
+}
+.left_invisible span p,.right_invisible span p{
+    margin : 0.8rem 0;
+    font-size : 1.3rem;
+}
+.left_invisible button,.right_invisible button{
+    margin : 2rem 0;
+    padding : 0.8rem 5rem;
+    border-radius : 20px;   
+    outline : none;
+    border : 1px solid var(--fontColor);
+    background-color : var(--bgColor);
+    color : var(--fontColor);
+    text-transform : uppercase;
+    font-size : 0.9rem; 
+    font-weight : bold;
+}
+.left_invisible button:hover,.right_invisible button:hover{
+    background-color : var(--fontColor);
+    color : var(--bgColor);
+    box-shadow : 0 0 1px 1px var(--fontColor);
+}
+.right{
+    width : 100%;
+    display:flex;
+    flex-direction : column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    margin:0 auto;
+    transition: .5s ease-in-out;
+}
+.signin{
+    width : 50rem;
+    display : flex;
+    margin-top : 5rem;
+    flex-direction : column;
+    align-items:center;
+    justify-content : center;
+    transition: .5s ease-in-out;
+    display : none;
+}
+.signup h1,.signin h1{
+    margin-bottom : 2rem;
+    font-size : 2.5rem;
+    color : var(--bgColor);
+}
+.signup form div,.signin div form div{
+    margin : 10px;
+    padding:8px;
+    background-color : var(--inputColor);
+    border-radius : 5px;
+}
+.signup form div:hover,.signin div form div:hover{
+    border : 0.5px solid var(--bgColor);
+    cursor : pointer;
+}
+.signup form i,.signin form i{
+    padding : 2px;
+    color : rgba(0,0,0,0.2);
+}
+.signup form input,.signin input{
+    border:none;
+    outline:none;
+    padding:8px;
+    width : 20rem;
+    background-color : var(--inputColor);
+    font-size : 0.9rem;
+    font-weight : bold;
+}
+.signup form input[type='submit'],.signin input[type='submit']{
+    width :13rem;
+    margin-top : 0.1rem;
+    padding : 0.9rem 2rem;    
+    outline : none;    
+    color : var(--fontColor);    
+    font-size : 0.9rem; 
+    font-weight : bold;
+    text-transform : uppercase;
+    border-radius : 20px;   
+    border : 1px solid var(--fontColor);
+    background-color : var(--bgColor);
+}
+.signin input[type='submit']{
+    margin-left:7rem;
+}
+.signup form input[type='submit']:hover,.signin input[type='submit']:hover{
+    color : var(--bgColor);
+    background-color : var(--fontColor);
+    border : 1px solid var(--bgColor);
+    box-shadow : 0 0 1px 1px var(--fontColor);
+}
+.signin form{
+    margin-bottom : 5rem;
+}
+.auth{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.auth div{
+    height : 50px;
+    width : 50px;
+    border-radius : 50%;
+    margin : 0.8rem 0.8rem ;
+    display:flex;
+    padding : 5px;
+    border : 3px solid var(--inputColor);
+    justify-content : center;
+    align-items:center;
+}
+.auth div:hover{
+    border : 1.5px solid var(--bgColor);
+}
+.fa-google{
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.fa-facebook-f{
+    color : #3b5998;
+}
+.fa-linkedin-in{
+    color : #0000ff;
+}
+.other_option{
+    margin : 0.5rem;
+    text-align:center;
+}
+.other_option p{
+    color : var(--bgColor);
+}
+.msg{
+    width : 17rem;
+    margin : 1rem;
+    text-align : center;
+    color : var(--bgColor);
+    margin-left : 3rem;
+}
+#fgpwd{
+    text-align:center;
+    background-color : var(--fontColor);
+}
+#fgpwd:hover{
+    border:none;
+    cursor: auto;
+}
+#fgpwd a{
+    text-decoration : none;
+    color : var(--bgColor);
+}
+@media screen and (max-width :600px){
+    .container{
+        display : flex;
+        flex-direction : column;
+    }
+    .Tittle h1{
+        font-size : 1.5rem;
+    }
+    .left{
+        height : 40em;
+        width : 30em;
+        padding : 5px;
+        background-color: var(--bgColor);
+        transition: .5s ease-in-out;
+    }
+    .right{
+        height : 40em;
+        width : 100%;
+        display:flex;
+        flex-direction : column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        margin:0 auto;
+        transition: .5s ease-in-out;
+    }
+    .signin{
+        left : 12%;
+        width : 30rem;
+        transition: .5s ease-in-out;
+    }
+    
+}
+@media screen and (max-width :900px){
+    .left{
+        height : 40.5em;
+        width : 30em;
+        padding : 5px;
+        background-color: var(--bgColor);
+        transition: .5s ease-in-out;
+    }
+    .signin{
+        left : 12%;
+        width : 30em;
+        transition: .5s ease-in-out;
+    }
+    
+}

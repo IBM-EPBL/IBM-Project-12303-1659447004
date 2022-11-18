@@ -1,0 +1,174 @@
+:root{
+    --bgColor : #1abc9c;
+    --fontColor : #fff;
+    --inputColor : #ecf0f1;
+}
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family : Roboto;
+}
+body{
+    font-family : Roboto;
+    background-color : var(--bgColor);
+}
+.header{
+    display : flex;
+    height : 80px;
+    box-shadow: 0 0 1px 1px rgba(250,250,250,1);
+    background-color : var(--fontColor);
+}
+.Tittle{
+    flex : 1;
+    display : flex;
+    align-items: center;
+    color : var(--bgColor);
+}
+.Tittle h1{
+    font-size : 1.5rem;
+}
+.urls{
+    display : flex;
+    align-items:center;
+    justify-content:center;
+}
+.urls div{
+    margin: 0 0.5rem 0 1rem;
+    font-size : 1.2rem;
+}
+.urls div img{
+    border-radius:50%;
+    width : 40px;
+    height : 40px;
+}
+.urls div a{
+    text-decoration : none;
+    color : var(--bgColor);
+}
+.complaints_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items : center;
+    justify-content : center;
+}
+.no_com{
+    height : 7rem;
+    width : 50rem;
+    margin : 12rem 20rem;
+    background-color : var(--fontColor);
+    display : flex;
+    align-items:center;
+    justify-content:center;
+    color : rgba(0,0,0,0.5);
+    padding : 4rem;
+    box-shadow : 0 0 2px 2px var(--inputColor);
+}
+.no_com a{
+    color : var(--bgColor);
+}
+.complaint{
+    width: 26rem;
+    height: 17rem;
+    padding: 1rem;
+    margin: 1.2rem 1rem;
+    color: rgba(0,0,0,0.7);
+    background-color: var(--fontColor);
+    justify-content: center;
+    box-shadow : inset 0 0 10px rgba(0,0,0,0.3);
+}
+.complaint div:first-child h2{
+    color : var(--bgColor);
+    text-decoration : underline;
+}
+.complaint div:nth-child(2){
+    display : flex;
+    margin-top : 1rem;
+}
+.complaint div #complaint_name{
+    text-transform : capitalize;
+    flex : 1;
+}
+.complaint div .against_person{
+    margin : 0.5rem 0;
+    text-align :center;
+}
+.complaint div .des{
+    margin-top : 0.5rem;
+    margin-left : 0.5rem;
+    font-size : 0.8rem;
+}
+.complaint .desc{
+    display : flex;
+    height : 6rem;
+    flex-direction : column;
+}
+.complaint .btns{
+    display : flex;
+    margin : 0.5rem 0;
+    position : relative;
+}
+.complaint .btns button{
+    padding : 0.5rem 1.5rem;
+    outline : none;
+    font-size : 0.9rem;
+    border-radius : 0.2rem;
+    background-color : var(--fontColor);
+    cursor : pointer;
+}
+.complaint .btns #dismiss{
+    color : rgb(255,0,0);
+    font-weight : bold;
+    border : 1px solid rgb(255,0,0);
+}
+.complaint .btns #solved{
+    position :absolute;
+    color : rgb(0,255,0);
+    font-weight : bold;
+    border : 1px solid rgb(0,255,0);
+    right : 0;
+}
+.complaint .btns #dismiss1{
+    color : rgb(255,0,0);
+    font-weight : bold;
+    opacity : 0.5;
+    cursor : auto;
+    border : 1px solid rgb(255,0,0);
+}
+.complaint .btns #solved1{
+    position :absolute;
+    color : rgb(0,255,0);
+    opacity : 0.5;
+    cursor : auto;
+    font-weight : bold;
+    border : 1px solid rgb(0,255,0);
+    right : 0;
+}
+input[type="text"] {
+    display: none;
+}
+.fa-times-circle{
+    margin : 0 0.2rem;
+}
+.fa-check-circle{
+    margin : 0 0.2rem;
+}
+.fa-spinner{
+    transform : rotate(40deg);
+}
+@media screen and (max-width : 600px){
+    .Tittle h1{
+        font-size : 1.3rem;
+    }
+    .complaints_list{
+        grid-template-columns : repeat(1,1fr);
+    }
+    .complaint{
+        margin-left : 2.5rem;
+    }
+    .no_com{
+        width : 30rem;
+        font-size : 0.8rem;
+        text-align : center;
+    }
+}

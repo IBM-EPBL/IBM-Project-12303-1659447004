@@ -1,0 +1,114 @@
+:root{
+    --bgColor : #1abc9c;
+    --fontColor : #fff;
+    --inputColor : #ecf0f1;
+}
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+body{
+    font-family : Roboto;
+    background-color : var(--bgColor);
+}
+.header{
+    display : flex;
+    height : 80px;
+    box-shadow: 0 0 1px 1px rgba(250,250,250,1);
+    background-color : var(--fontColor);
+}
+.Tittle{
+    flex : 1;
+    display : flex;
+    align-items: center;
+    color : var(--bgColor);
+}
+.Tittle h1{
+    font-size : 1.5rem;
+}
+.container{
+    width : 40rem;
+    margin : 2.5rem auto;
+    box-shadow:0 1px 1px 1px rgba(250,250,250,1);
+    background-color : var(--fontColor);
+}
+.container form{
+    margin:0 auto;
+    padding : 0.5rem;
+}
+.container form div{
+    padding : 0.5rem;
+    display : flex;
+    justify-content:center;
+    align-items : center;
+}
+.container form div h1{
+    color :var(--bgColor);
+    text-align :center;
+}
+.container form div i{
+    height : 2.8rem;
+    padding : 0.5rem;
+    border-left: 1px solid var(--bgColor);
+    border-top: 1px solid var(--bgColor);
+    border-bottom:1px solid  var(--bgColor);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    background-color : var(--inputColor);
+}
+.container form div input{
+    width : 30rem;
+    height : 2.8rem;
+    padding : 0.5rem;
+    outline : none;
+    border:none;
+    background-color : var(--inputColor);
+    font-size : 0.9rem;
+    font-weight : bold;
+    border-right: 1px solid var(--bgColor);
+    border-top: 1px solid var(--bgColor);
+    border-bottom:1px solid  var(--bgColor);
+}
+.container form div input[type="submit"]{
+    width :15rem;
+    margin-top : 0.1rem;
+    padding : 0.9rem 2rem;    
+    outline : none;    
+    color : var(--fontColor);    
+    font-size : 0.9rem; 
+    font-weight : bold;
+    text-transform : uppercase;
+    border-radius : 20px;   
+    border : 1px solid var(--fontColor);
+    background-color : var(--bgColor);
+}
+.msg{
+    color : green;
+}
+.container form div button{
+    color : var(--fontColor);
+    background-color : var(--bgColor);
+    padding : 0.5rem;
+    font-size : 1rem;
+    text-decoration : none;
+    margin : 0rem 0.2rem;
+    outline : none;
+    border : 1px solid var(--bgColor);
+    cursor : pointer;
+    box-shadow : 0 0 1px 1px rgba(0,0,0,0.3);
+}
+.container div a{
+    color : var(--bgColor);
+    font-size : 1.4rem;
+    display : flex;
+    align-items : center;
+    padding : 0.5rem 0;
+    justify-content: center;
+}
+@media screen and (max-width : 600px){
+    .container{
+        width : 30rem;
+    }
+}
